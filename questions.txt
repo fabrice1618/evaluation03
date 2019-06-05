@@ -1,33 +1,51 @@
-Evaluation 03 - Développement Plugin wordpress
+﻿Evaluation 03 - Développement Plugin wordpress
 
 1- Pourquoi paramétrer un utilisateur evaluation03 pour accéder à la base de donnée
 au lieu d'utiliser l'utilisateur 'root'?
-réponse:
+réponse: 
+
+Pour des raisons de sécurité
 
 2- Pour améliorer la sécurité de la base de donnée quels autres paramétrages de l'utilisateur
 pouvez vous utiliser?
-réponse:
+réponse: 
+
+L
 
 3- Qu'est-ce qu'un virtualhost dans apache?
 réponse:
 
+Le principe des Serveurs Virtuels consiste à faire fonctionner un ou plusieurs serveurs Web
+
 4- A quoi sert un thème enfant ? Quelle est son utilité quand on fait une mise à jour de wordpress ?
 réponse:
+
+ Il garde nos modifications
 
 5- Que signifie i18n ? A quoi sert la fonction __( 'Hello world', 'my-text-domain' ); ?
 réponse:
 
+En développement de logiciel, l'internationalisation (abrégé en i18n, où 18 représente le nombre de caractères entre le i et le n dans le mot) est la mise en place d'un système permettant la régionalisation du logiciel, c'est-à-dire son adaptation à des langues et des cultures différentes. 
+
 6- Dans un thème à quoi sert le fichier 404.php ? page.php ?
 réponse:
+
+Cette portion de script permet de retourner un véritable code d'erreur 404 lorsqu'un fichier n'est pas trouvé sur le serveur et ne peut être affiché au client. Retourner un header 404 permet notamment au serveur web de logguer les erreurs 404
 
 7- Qu'est ce qu'un "custom post type" ?
 réponse:
 
+Les custom post types (ou types de contenus personnalisés) permettent de créer du contenu différent (et différencié) de ceux fournis par défaut par WordPress, à savoir les articles ou les pages 
+
 8- Qu'est ce qu'un "custom field" ?
 réponse:
 
+WordPress permet aux auteurs de publication d'attribuer des champs personnalisés à une publication. Ces informations supplémentaires arbitraires sont appelées métadonnées . Ces méta-données peuvent inclure des bits d'information 
+
 12- Quelles sont les principales fonctions de l'API wordpress ?
 réponse:
+
+l’API REST fonctionne en manipulant des données textuelles d’un endroit à l’autre sans accès direct à une base de données ou à une interface utilisateur. 
 
 13- Est-ce que l'API wordpress permet de modifier le site web ? quid de la sécurité ?
 réponse:
@@ -35,11 +53,19 @@ réponse:
 14- Qu'est ce que la wordpress loop ?
 réponse:
 
+La Boucle (The Loop) est utilisée par WordPress pour afficher chacun de vos Articles. Par l'utilisation de La Boucle, WordPress traite tous les Articles devant être affichés sur la page active et adapte leur présentation en utilisant les critères décrits par les marqueurs de La Boucle. Tous les morceaux de code HTML ou PHP placés entre le début et la fin de La Boucle seront exécutés pour chaque Article. Quand la documentation de WordPress déclare que "Ce Marqueur doit être inséré dans La Boucle", comme pour les Marqueurs de Modèle spécifiques ou des plugins, c'est de La Boucle dont on parle.
+
 15- Quelles sont les fonctions principales du plugin reservation-evenements ?
 réponse:
 
 16- A quoi sert la fonction wp_nonce_field() ?
 réponse:
 
+Les Nonces WordPress sont utilisés dans les formulaire sous WordPress afin de prévenir les erreurs et les attaques.
+L' API des plugins WordPress met à disposition plusieurs fonctions, filtres et hooks pour la gestions des nonces
+
 17- Comment sont stockées les réservations ?
-réponse:
+réponse: 
+
+dans un fichier json
+
